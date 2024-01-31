@@ -1,17 +1,18 @@
 // Code EyesOnMe Component Here
 function EyesOnMe() {
+  const focus = () => {
+    console.log("Good!");
+  };
 
-const focus = (e) => {
-  console.log('Good!');
-}
-
-const blur = (e) => {
-  console.log('Hey! Eyes on me!');
-}
+  const blur = () => {
+    console.log("Hey! Eyes on me!");
+  };
 
   return (
     <div>
-      <button onFocus={focus} onBlur={blur}>Eyes on me</button>
+      <button onFocus={focus} onBlur={blur}>
+        Eyes on me
+      </button>
     </div>
   );
 }
